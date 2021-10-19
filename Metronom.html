@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Metronom</title>
+        <link rel="stylesheet" href="Metronom.css">
+        <script src="Tone.js"></script>
+        
+        
+
+    </head>
+
+    <body>
+        <div class ="container">
+
+            <div class = "block">
+                <p id="Ueber">Metronom</p>
+            </div>
+
+            <div class = "block">
+                <input type="button" id="start" value = "Start (Leertaste)" onclick="stasto()">
+            </div>
+
+            <div class="block">
+                <input type="range" id="BPM" class="slider" min="44" max="220" value="100" onchange="setBPM()">
+            </div>
+
+            <div class = "block">
+                <input type="radio" id="male" name="Takt" value="4" checked onclick="TaktSetzen('4')">
+                <label for="male">4/4 Takt</label><br>
+                <input type="radio" id="female" name="Takt" value="3" onclick="TaktSetzen('3')">
+                <label for="female">3/4 Takt</label><br>
+                <input type="radio" id="other" name="Takt" value="2" onclick="TaktSetzen('2')">
+                <label for="other">2/4 Takt</label>
+            </div>    
+            
+            <div class="block">
+
+            </div>
+            
+            <div class = "block">
+                <input type="checkbox" class="scales" id="Voice" name="VoiKli" checked>
+                <label for="scales">Stimme</label>
+                 <input type="checkbox" class="scales" id="Klick" name="VoiKli">
+                <label for="scales">Klick</label>
+                <p id="alert"></p>
+              </div>
+
+            <div class = "block" id="anzeige">
+                <p>BPM: <span id="BPMAnzeige">100</span></p>
+                <p id="Tempi">"Maestoso"</p>
+            </div>
+            
+        </div>
+
+        <script src="Metronom.js"></script>
+        
+    </body>
+</html>

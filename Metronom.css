@@ -1,0 +1,84 @@
+body {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#alert{
+    color: red;
+}
+
+#BPM {
+    margin: 0px;
+    padding: 0px;
+}
+
+#start {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 25px;
+    background-color: lightgreen;
+    border-style: none;
+    opacity: 0.7;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#start:hover {
+    opacity: 1;
+}
+
+#Tempi{
+    font-style: italic;
+    font-size: 12px;
+}
+
+#Ueber{
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.block {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+}
+
+.container {
+    width: 200px;
+    height: 320px;
+    background-color: rgb(222, 245, 220);
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: auto;
+    
+}
+
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: lightgreen; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
